@@ -19,6 +19,7 @@ class fdtd():
         """
 
         # set the grid shape
+        #print(eps_r)
         eps_r = reshape_to_ND(eps_r, N=3)
         self.Nx, self.Ny, self.Nz = self.grid_shape = eps_r.shape
 
