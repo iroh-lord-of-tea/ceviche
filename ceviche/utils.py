@@ -206,7 +206,7 @@ def float_2_array(x):
 def reshape_to_ND(arr, N):
     """ Adds dimensions to arr until it is dimension N
     """
-
+    print(type(arr))
     ND = len(arr.shape)
     if ND > N:
         raise ValueError("array is larger than {} dimensional, given shape {}".format(N, arr.shape))
